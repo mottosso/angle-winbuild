@@ -89,8 +89,8 @@ jobs:
         dir angle\out\Hello
         copy angle\out\Hello\libEGL.dll output\libEGL.dll
         copy angle\out\Hello\libGLESv2.dll output\libGLESv2.dll
-        copy angle\out\Hello\libEGL.lib output\libEGL.lib
-        copy angle\out\Hello\libGLESv2.lib output\libGLESv2.lib
+        copy angle\out\Hello\libEGL.lib output\libEGL.dll.lib
+        copy angle\out\Hello\libGLESv2.lib output\libGLESv2.dll.lib
     - name: Upload Artifacts
       uses: actions/upload-artifact@v4
       with:
